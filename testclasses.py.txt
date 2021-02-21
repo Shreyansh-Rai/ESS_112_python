@@ -1,0 +1,14 @@
+class person :
+    def __init__(self,nm):
+        self.name=nm
+    def setage(self,a):
+        self.age=a
+    def getage(self):
+        return self.age
+    def __str__(self):
+        self.setage(10)
+        return ("Name "+self.name+" Age "+str(self.getage()) )
+
+if __name__=="__main__":
+    p1=person("Hemlo")
+    print(p1)
